@@ -31,4 +31,9 @@
 
     // never type
     // --> never type is a feature that allows us to return never type from a function
+
+    const throwError = (message: string): never => {
+        throw new Error(message);
+    };
+    
 }
