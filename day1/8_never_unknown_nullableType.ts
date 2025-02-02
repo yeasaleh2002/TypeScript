@@ -11,11 +11,10 @@
   };
 
   console.log(searchName("John")); // Name: John
-    console.log(searchName(null)); // Name not found
-
+  console.log(searchName(null)); // Name not found
 
   // unknown type
-    // --> unknown type is a feature that allows us to assign any type of value to a variable
+  // --> unknown type is a feature that allows us to assign any type of value to a variable
 
   const getSpeedInMeterPerSecond = (speed: unknown) => {
     if (typeof speed === "number") {
@@ -25,15 +24,13 @@
     }
   };
 
-    console.log(getSpeedInMeterPerSecond(100)); // 100
-    console.log(getSpeedInMeterPerSecond("100")); // Speed is unknown
+  console.log(getSpeedInMeterPerSecond(100)); // 100
+  console.log(getSpeedInMeterPerSecond("100")); // Speed is unknown
 
+  // never type
+  // --> never type is a feature that allows us to return never type from a function
 
-    // never type
-    // --> never type is a feature that allows us to return never type from a function
-
-    const throwError = (message: string): never => {
-        throw new Error(message);
-    };
-    
+  const throwError = (message: string): never => {
+    throw new Error(message);
+  };
 }
