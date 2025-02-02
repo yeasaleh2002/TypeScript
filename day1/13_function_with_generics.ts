@@ -21,3 +21,5 @@ const createTuple = <T, U>(param1: T, param2: U): [T, U] => {
 }
 
 const tuple1 = createTuple("John", 25);
+
+console.log(tuple1); // [ 'John', 25 ]
