@@ -1,5 +1,5 @@
 // generic with interface
-interface Developer {
+interface Developer<T> {
   name: string;
   computer: {
     processor: string;
@@ -14,10 +14,15 @@ interface Developer {
     brand: string;
     price: number;
   };
-  IsEmployed: boolean;
+  IsEmployed: T;
 }
 
-const developer1: Developer = {
+interface isEmployed {
+    company: string;
+    salary: number;
+};
+
+const developer1: Developer<boolean> = {
   name: "John",
   computer: {
     processor: "Intel",
@@ -35,34 +40,20 @@ const developer1: Developer = {
   IsEmployed: true,
 };
 
-interface Developer2<T, U, V, W, X> {
-  name: T;
-  computer: U;
-  smartWatch: V;
-  mobile: W;
-  IsEmployed: X;
-}
-
-const developer2: Developer2<
-  string,
-  { processor: string; memory: string; storage: string },
-  { brand: string; price: number },
-  { brand: string; price: number },
-  boolean
-> = {
-  name: "Steve",
-  computer: {
-    processor: "AMD",
-    memory: "8GB",
-    storage: "512GB",
-  },
-  smartWatch: {
-    brand: "Samsung",
-    price: 400,
-  },
-  mobile: {
-    brand: "Apple",
-    price: 1200,
-  },
-  IsEmployed: false,
-};
+const developer2: Developer<isEmployed> = {
+    name: "Steve",
+    computer: {
+        processor: "AMD",
+        memory: "8GB",
+        storage: "512GB",
+    },
+    smartWatch: {
+        brand: "Samsung",
+        price: 300,
+    },
+    mobile: {
+        brand: "Apple",
+        price: 1200,
+    },
+    IsEmployed: { company: "Google", salary: 100000 },
+    };
