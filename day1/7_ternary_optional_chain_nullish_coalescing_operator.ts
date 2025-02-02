@@ -6,4 +6,5 @@
   // ternary operator
   const age: number = 18;
   const isAdult = age >= 18 ? "Adult" : "Not Adult";
+  console.log(isAdult); // Adult
 }
