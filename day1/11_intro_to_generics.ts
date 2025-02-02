@@ -37,3 +37,4 @@ const user2: genericsArray<{
 type genericsTouple<T, U> = [T, U];
 
 const studentInfo: genericsTouple<string, number> = ["John", 25];
+
