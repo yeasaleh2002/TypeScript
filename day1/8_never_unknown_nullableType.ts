@@ -11,9 +11,20 @@
   };
 
   console.log(searchName("John")); // Name: John
+    console.log(searchName(null)); // Name not found
 
 
   // unknown type
     // --> unknown type is a feature that allows us to assign any type of value to a variable
-    
+
+  const getSpeedInMeterPerSecond = (speed: unknown) => {
+    if (typeof speed === "number") {
+      return speed;
+    } else {
+      return "Speed is unknown";
+    }
+  };
+
+    console.log(getSpeedInMeterPerSecond(100)); // 100
+    console.log(getSpeedInMeterPerSecond("100")); // Speed is unknown
 }
