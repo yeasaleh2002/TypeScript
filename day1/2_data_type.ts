@@ -53,8 +53,11 @@ let person: object = {
 let user: {
     name: string,
     role? : string, // optonal property --> defined by ? mark and it can be undefined or null or string type value. It is not a required property. 
-    age: number
+    age: number, 
+    address: "Bangladesh"; // type --> literal type --> which is working as a type and value both. we will use this type when we know the exact value of the property and we can't change it. we can't need to change it.
 } = {
     name: "John",
-    age: 25
+    age: 25,
+    address: "Bangladesh"
 }
+
