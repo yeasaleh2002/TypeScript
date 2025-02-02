@@ -7,4 +7,17 @@
   const age: number = 18;
   const isAdult = age >= 18 ? "Adult" : "Not Adult";
   console.log(isAdult); // Adult
+
+  // optional chaining
+  // --> optional chaining is a feature that allows us to access nested properties without worrying if the property exists or not
+
+  // optional chaining
+  type Student = {
+    name: string;
+    age: number;
+    address?: {
+      city: string;
+      country: string;
+    };
+  };
 }
