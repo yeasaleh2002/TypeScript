@@ -31,3 +31,9 @@ const user2: genericsArray<{
   { name: "Bill", age: 35, address: "UK", role: "Admin", balance: 600 },
   { name: "Ravi", age: 40, address: "India", role: "User", balance: 300 },
 ];
+
+
+// generic touple
+type genericsTouple<T, U> = [T, U];
+
+const studentInfo: genericsTouple<string, number> = ["John", 25];
