@@ -11,4 +11,9 @@
   };
 
   console.log(searchName("John")); // Name: John
+
+
+  // unknown type
+    // --> unknown type is a feature that allows us to assign any type of value to a variable
+    
 }
