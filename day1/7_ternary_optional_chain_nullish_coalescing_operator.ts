@@ -10,8 +10,12 @@
 
   // nullish coalescing operator
     // --> nullish coalescing operator is a feature that allows us to assign a default value when the value is null or undefined
-    const name: string = null;
+    const name = null;
+    const name1 = undefined;
     const userName = name ?? "John";
+    const userName1 = name1 ?? "Steve";
+    console.log(userName); // John
+    console.log(userName1); // Steve
 
   // optional chaining
   // --> optional chaining is a feature that allows us to access nested properties without worrying if the property exists or not
