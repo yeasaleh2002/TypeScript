@@ -29,4 +29,6 @@
     const throwError = (message) => {
         throw new Error(message);
     };
+    throwError("Error: Something went wrong");
+    // throwError("Error: Something went wrong");
 }
