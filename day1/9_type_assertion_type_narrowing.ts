@@ -20,3 +20,18 @@ const kgToGram = (weight: string | number): string | number | undefined => {
     return weight * 1000;
   }
 };
+
+
+type CustomError = {
+    message: string;
+}
+
+
+try {
+  console.log(kgToGram("10")); // 10000
+  console.log(kgToGram(10)); // 10000
+  console.log(kgToGram("abc")); // NaN
+}
+catch (error) {
+  console.log((error as CustomError).message);
+}
