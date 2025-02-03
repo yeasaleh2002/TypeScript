@@ -36,9 +36,16 @@
 class Animal {
   // properties
   // what is properties? => properties are the variables that are declared in a class
-  name: string;
-  species: string;
-  age: number;
+  public name: string;
+  public species: string;
+  public age: number;
+
+  // parameter properties
+    // what is parameter properties? => parameter properties are the properties that are declared in the constructor
+  /* 
+  constructor(public name: string, public species: string, public age: number) {
+  }
+  */
 
   constructor(name: string, species: string, age: number) {
     this.name = name;
