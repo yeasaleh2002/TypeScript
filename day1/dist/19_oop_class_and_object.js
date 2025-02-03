@@ -26,9 +26,21 @@
 // --> object is an instance of a class
 // class
 class Animal {
+    // parameter properties
+    // what is parameter properties? => parameter properties are the properties that are declared in the constructor
+    /*
+    constructor(public name: string, public species: string, public age: number) {
+    }
+    */
     constructor(name, species, age) {
         this.name = name;
         this.species = species;
         this.age = age;
     }
+    // methods
+    // what is methods? => methods are the functions that are declared in a class
+    display() {
+        console.log(`Name: ${this.name}, Species: ${this.species}, Age: ${this.age}`);
+    }
 }
+const dog = new Animal("Dog", "Mammal", 5);
