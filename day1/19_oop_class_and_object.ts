@@ -32,16 +32,27 @@
 // what is object?
 // --> object is an instance of a class
 
-
 // class
 class Animal {
-    name: string;
-    species: string;
-    age: number;
+  // properties
+  // what is properties? => properties are the variables that are declared in a class
+  name: string;
+  species: string;
+  age: number;
 
-    constructor(name: string, species: string, age: number) {
-        this.name = name;
-        this.species = species;
-        this.age = age;
-    }
+  constructor(name: string, species: string, age: number) {
+    this.name = name;
+    this.species = species;
+    this.age = age;
+  }
+
+  // methods
+  // what is methods? => methods are the functions that are declared in a class
+  display() {
+    console.log(
+      `Name: ${this.name}, Species: ${this.species}, Age: ${this.age}`
+    );
+  }
 }
+
+const dog = new Animal("Dog", "Mammal", 5);
