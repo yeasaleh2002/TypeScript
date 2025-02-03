@@ -24,3 +24,11 @@
 // --> class is a blueprint for creating objects
 // what is object?
 // --> object is an instance of a class
+// class
+class Animal {
+    constructor(name, species, age) {
+        this.name = name;
+        this.species = species;
+        this.age = age;
+    }
+}
