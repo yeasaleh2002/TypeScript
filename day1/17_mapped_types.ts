@@ -13,3 +13,20 @@ type - type
 */
 
 // Example 1
+
+type Person = {
+  name: string;
+  age: number;
+};
+
+type ReadOnlyPerson = {
+  readonly [P in keyof Person]: Person[P];
+};
+
+const person1: ReadOnlyPerson = {
+  name: "John",
+  age: 25,
+};
+
+// person.name = "Steve"; // Cannot assign to 'name' because it is a read-only property.            
+console.log(person1.name); // John
